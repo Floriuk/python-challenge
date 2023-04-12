@@ -23,8 +23,8 @@ with open(csvpath, encoding='UTF-8') as csvfile:
         
 
 print("Total Months: " + str(len(list_months)))
-print("Total: ", round(sum_months))
+print("Total: $", round(sum_months))
 list_avg = mean(list_diferences)
-print("Average Change: " + str(round(list_avg,2)))
+print("Average Change: $" + str(round(list_avg,2)))
 print('Greatest Increase in Profits: '+ m[0] + ' ($' + str(round(max(list_diferences)))+')')
 print('Greatest Decrease in Profits: '+ m[0] + ' ($' + str(round(min(list_diferences)))+')')
