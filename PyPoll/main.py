@@ -1,6 +1,6 @@
 import os
 import csv
-csvpath = os.path.join('Resources', 'election_data.csv')
+csvpath = os.path.join('PyPoll','Resources','election_data.csv')
 
 #opening file as csv
 with open(csvpath, encoding='UTF-8') as csvfile:
@@ -57,5 +57,6 @@ Winner: {winner}
 print(output)
 
 #exporting to text file
-with open("analysis/pypoll.text", "w") as f:
+txtpath = os.path.join('PyPoll','analysis','pybank.txt')
+with open(txtpath, "w") as f:
     f.write(output)

@@ -1,5 +1,5 @@
 import os, csv
-csvpath = os.path.join('Resources', 'budget_data.csv')
+csvpath = os.path.join('PyBank','Resources', 'budget_data.csv')
 
 #declaring my variables
 sum_months = 0
@@ -64,5 +64,6 @@ Greatest Decrease in Profits: {greatest_decrease_month} (${str(round(greatest_de
 print(output)
 
 #creating text file with the results
-with open("analysis/pybank.text","w") as f:
+txtpath = os.path.join('PyBank','analysis','pybank.txt')
+with open(txtpath,"w") as f:
     f.write(output)
